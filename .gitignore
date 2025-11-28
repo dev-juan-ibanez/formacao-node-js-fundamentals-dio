@@ -1,0 +1,62 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Caches
+.cache/
+.parcel-cache/
+
+# Next/Nuxt/Vite/etc
+.next/
+.nuxt/
+.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+pids/
+
+# Coverage
+coverage/
+.nyc_output/
+coverage-*.json
+
+# Environment files
+.env
+.env.*
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+*.tgz
+*.local
+*.cache-loader
+.serverless
+.eslintcache
+.sass-cache
+.node_repl_history
