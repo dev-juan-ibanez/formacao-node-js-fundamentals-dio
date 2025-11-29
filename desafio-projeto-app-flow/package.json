@@ -1,0 +1,29 @@
+{
+  "name": "projeto-app-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start:dev": "tsx -r dotenv/config src/server.ts",
+    "start:watch": "tsx watch -r dotenv/config src/server.ts",
+    "build": "tsup src/server.ts --format cjs --out-dir dist --dts false",
+    "start:dist": "npm run build && node -r dotenv/config dist/server.js",
+    "test": "tsx test/endpoints.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+  ,
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
